@@ -1,0 +1,45 @@
+.main {
+    background-image: url("../images/manu.jpg");
+    background-size:100%;
+}
+.mainH {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 60px;
+}
+div.card {
+    background-color: transparent;
+    width: 250px;
+    height: 200px;
+    perspective: 1000px;
+    margin-left: 580px;
+}
+.inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.card:hover .inner {
+    transform: rotateY(180deg);
+}
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: transparent;
+}
+.front {
+    background: transparent;
+}
+.back {
+    color: black;
+    transform: rotateY(180deg);
+  }
